@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('img/bg.jpg') center center fixed;
+    background-size: cover;
+    /* opacity: 0.6; */
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 100px;
+    /* color: red; */
+    text-shadow: 0 0 15px #FF0000;
+    color: white;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    text-shadow: 0 0 15px #FF0000;
+    color: white;
+}
+
+.wishing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#present {
+    width: 100px;
+    /* background-color: white; */
+    animation: beat 1s infinite;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin: 2vh 0;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#tree {
+    animation: swing 1s infinite;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    75% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+#balloon {
+    animation: fly 1s infinite;
+}
+
+@keyframes fly {
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px);
+        opacity: 0.01;
+    }
+}

@@ -1,0 +1,5 @@
+button = document.querySelector("button");
+function greet(){
+    document.querySelector('.container').innerHTML = "";
+    document.querySelector('.container').innerHTML = '<h1>Merry Christmas!!!</h1><div class="imgs" style="position: relative;"><img src="img/treats.webp" alt="" style="width: 250px; position: absolute; top: -100%; left: -200%; -webkit-filter: drop-shadow(5px 5px 15px #fff); filter: drop-shadow(5px 5px 15px #fff);"><img src="img/treats.webp" alt="" style="-webkit-transform: scaleX(-1);transform: scaleX(-1);width: 250px; position: absolute; top: -100%; left: 200%; -webkit-filter: drop-shadow(5px 5px 15px #fff); filter: drop-shadow(5px 5px 15px #fff);"><img id="tree" src="img/christmasTree.png" alt="" style="width: 200px;"><img id="balloon" src="img/ballons.png" alt="" style="width: 150px; position: absolute; top: 10%; left: -150%;"><img id="balloon" src="img/ballons.png" alt="" style="width: 150px; position: absolute; top: 10%; left: 150%;"></div>';
+}
